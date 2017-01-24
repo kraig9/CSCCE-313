@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\linked_list.cpp" />
-    <ClCompile Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\main.cpp" />
+    <ClCompile Include="linked_list.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\linked_list.h" />
+    <ClInclude Include="linked_list.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\Makefile" />
+    <None Include="Makefile" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D7B3AD34-1D3D-48BE-9982-711992CCF7AB}</ProjectGuid>

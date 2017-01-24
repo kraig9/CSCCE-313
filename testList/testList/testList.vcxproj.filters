@@ -15,20 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\linked_list.cpp">
+    <ClCompile Include="linked_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\linked_list.h">
+    <ClInclude Include="linked_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="H:\CSCE 313\MP1_sources\MP1_sources\Part_1\Makefile">
+    <None Include="Makefile">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
