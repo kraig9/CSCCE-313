@@ -21,6 +21,9 @@ linked_list::linked_list()
 
 void linked_list::Init(int M, int b)
 {
+	block_size = b;
+	mem_size = M;
+	head_pointer = static_cast<char*>(malloc(M));
 
 }
 
