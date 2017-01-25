@@ -21,18 +21,31 @@ linked_list::linked_list()
 
 void linked_list::Init(int M, int b)
 {
+	block_size = b;
+	mem_size = M;
+	head_pointer = static_cast<char*>(malloc(M));
 
 }
 
 void linked_list::Destroy()
 {
-
+	free(head_pointer);
 } 
 
 /* Insert an element into the list with a given key, given data element, and with a given length*/
 void linked_list::Insert (int k, char * data_ptr, int data_len)
 {
-
+	if (data_len == max_data_size) {
+		cout << "error: data length exceeds max data size";
+		return -1;
+	}
+	/*else if ((data_len + 16) > block_size) {
+		cout << "error: data does not fit in the payload";
+		return -1;
+	}*/
+	char*  address;
+	node* next;
+	if()
 }
 
 
@@ -95,81 +108,81 @@ void linked_list::PrintList()
 /* Getter Functions */
 char* linked_list::getHeadPointer()
 {
-
+	return head_pointer;
 }
 
 node* linked_list::getFrontPointer()
 {
-
+	return front_pointer;
 }
 
 node* linked_list::getFreePointer()
 {
-
+	return free_pointer;
 }
 
 node* linked_list::getFreeDataPointer()
 {
-
+	return free_data_pointer;
 }
 
 int linked_list::getBlockSize()
 {
-
+	return block_size;
 }
 
 int linked_list::getMemSize()
 {
-
+	return mem_size;
 }
 
 int linked_list::getMaxDataSize()
 {
-
+	return max_data_size;
 }
 
 bool linked_list::getInitialized()
 {
-
+	return initialized;
 }
 
 /* Setter Functions */
 void linked_list::setHeadPointer(char *new_pointer)
 {
-
+	head_pointer = new_pointer;
 }
 
 void linked_list::setFrontPointer(node* new_pointer)
 {
-
+	front_pointer = new_pointer;
 }
 
 void linked_list::setFreePointer(node* new_pointer)
 {
-
+	free_pointer = new_pointer;
 }
 
 void linked_list::setFreeDataPointer(node* new_pointer)
 {
-
+	free_data_pointer = new_pointer;
 }
 
 void linked_list::setBlockSize(int new_block_size)
 {
-
+	block_size = new_block_size;
 }
 
 void linked_list::setMemSize(int new_mem_size)
 {
-
+	mem_size = new_mem_size;
 }
 
 void linked_list::setMaxDataSize(int new_max_data_size)
 {
-
+	max_data_size = new_max_data_size;
 }
 
 void linked_list::setInitialized(bool new_initialized)
 {
-
+	initialized = new_initialized;
 }
