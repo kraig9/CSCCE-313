@@ -35,7 +35,7 @@ void linked_list::Destroy()
 /* Insert an element into the list with a given key, given data element, and with a given length*/
 void linked_list::Insert (int k, char * data_ptr, int data_len)
 {
-	if (data_len == max_data_size) {
+	if (data_len >= max_data_size) {
 		cout << "error: data length exceeds max data size";
 		return -1;
 	}
